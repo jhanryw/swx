@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grupo VIP SWX Atacado Variado</title>
+<meta name="description" content="Entre agora no grupo VIP da SWX Atacado Variado e receba as melhores ofertas em primeira mão.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23111'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='58' font-weight='bold' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #12141a;
+    --muted: #6b7280;
+    --accent: #22c55e;
+    --accent-dark: #16a34a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 24px env(safe-area-inset-right, 24px) 24px env(safe-area-inset-left, 24px);
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(1.5rem, 5vw + 0.5rem, 2.1rem);
+    line-height: 1.25;
+    margin: 0 0 12px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  p.subtitle {
+    margin: 0 0 32px;
+    color: var(--muted);
+    font-size: clamp(0.95rem, 2vw + 0.5rem, 1.05rem);
+    line-height: 1.5;
+    max-width: 34ch;
+  }
+  .cta {
+    appearance: none;
+    border: none;
+    width: 100%;
+    max-width: 340px;
+    background: var(--accent);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 18px 24px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cta:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+  }
+  .cta:disabled {
+    background: var(--accent-dark);
+    opacity: 0.85;
+    cursor: default;
+    transform: none;
+  }
+  @media (min-width: 768px) {
+    .logo { max-width: 210px; }
+    .cta { padding: 19px 28px; font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img class="logo" src="assets/logo.jpg" alt="SWX Atacado Variado" width="480" height="480">
+  <h1>Acesso Exclusivo Liberado</h1>
+  <p class="subtitle">Entre agora no grupo VIP da SWX e receba as melhores ofertas de atacado variado em primeira mão.</p>
+  <button type="button" class="cta" id="cta-btn">ENTRAR NO GRUPO VIP</button>
+</div>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1391288915823414');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1391288915823414&ev=PageView&noscript=1"
+/></noscript>
+
+<script>
+(function () {
+  var REDIRECT_URL = 'https://chat.whatsapp.com/EhYSn0kyBWJAJIxltRmOJk?s=sw&p=i&mlu=4&ilr=4';
+  var REDIRECT_DELAY_MS = 300;
+  var btn = document.getElementById('cta-btn');
+  var hasClicked = false;
+
+  btn.addEventListener('click', function () {
+    if (hasClicked) return;
+    hasClicked = true;
+    btn.disabled = true;
+
+    var redirected = false;
+    function goToGroup() {
+      if (redirected) return;
+      redirected = true;
+      window.location.href = REDIRECT_URL;
+    }
+
+    try {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    } catch (err) {}
+
+    setTimeout(goToGroup, REDIRECT_DELAY_MS);
+  });
+})();
+</script>
+
+</body>
+</html>
